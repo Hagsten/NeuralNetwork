@@ -67,6 +67,10 @@
   <ItemGroup>
     <Compile Include="Matrix.cs" />
     <Compile Include="NeuralNetwork.cs" />
+    <Compile Include="Problems\HandwrittenDigits.cs" />
+    <Compile Include="Problems\Iris.cs" />
+    <Compile Include="Problems\Sine.cs" />
+    <Compile Include="Problems\XOR.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
