@@ -39,7 +39,7 @@ namespace NeuralNetwork.Problems
             }
 
             s.Stop();
-            Console.WriteLine("Training complete in " + s.ElapsedMilliseconds);
+            Console.WriteLine($"Training complete in {s.ElapsedMilliseconds}ms{Environment.NewLine}");
             Console.WriteLine("Querying network...");
 
             var queryDataset = File.ReadAllLines(@"C:/Temp/mnist_test.csv"); ;

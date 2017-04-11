@@ -13,10 +13,10 @@ namespace NeuralNetwork.Problems
         {
             var shuffledInputs = GetInputs();
 
-            var network = new NeuralNetwork(4, 2, 3, 0.2);
+            var network = new NeuralNetwork(4, 5, 3, 0.2);
 
             var trainDataSet = shuffledInputs.Take(100).ToArray();
-            const int epochs = 200;
+            const int epochs = 500;
 
             Console.WriteLine($"Training network with {trainDataSet.Length} samples using {epochs} epochs...");
 
@@ -47,7 +47,6 @@ namespace NeuralNetwork.Problems
 
             Console.WriteLine(
                 $"Performance is {(scoreCard.Count(x => x) / Convert.ToDouble(scoreCard.Count)) * 100} percent.");
-
         }
 
         private static string[][] GetInputs()
